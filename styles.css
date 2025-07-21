@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background: #444;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    display: block;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #555;
+    border-radius: 5px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #35424a;
+}
+
+p {
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px; /* Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow */
+    margin: 10px 0; /* Adds spacing between images */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adds hover effects */
+}
+
+img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows images to wrap to the next row if needed */
+    justify-content: center; /* Centers the images horizontally */
+    gap: 20px; /* Adds spacing between images */
+    margin: 20px 0; /* Adds spacing above and below the container */
+}
+
+.image-container img {
+    max-width: 300px; /* Sets a maximum width for each image */
+    height: 200px; /* Sets a fixed height for consistency */
+    object-fit: cover; /* Ensures the image covers the container */
+    border-radius: 15px; /* Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adds hover effects */
+    margin: 10px; /* Adds spacing between images */
+}
+
+.image-container img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .image-container {
+        flex-direction: column; /* Stack images vertically on smaller screens */
+        align-items: center; /* Center the images */
+    }
+
+    .image-container img {
+        max-width: 90%; /* Reduce the width of images for smaller screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation links vertically */
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Add spacing between navigation links */
+    }
+
+    header h1 {
+        font-size: 1.5rem; /* Adjust header font size for smaller screens */
+    }
+
+    main {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+}
